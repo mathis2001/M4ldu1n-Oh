@@ -30,3 +30,8 @@ Collection of malduino scripts for pentesters.
 - wifi-pwd-grabber.txt: Search for cleartext wifi passwords stored in the computer and paste results in a file named "wifipwd.txt".
 
 ### Disclaimer: This tool have been designed for cybersecurity curious, pentesters and red team operators for your own computers or on computers you are allowed to test. Please, do not use it for illegal purposes.
+
+## Screenshots
+
+![Capture d’écran 2022-11-01 183203](https://user-images.githubusercontent.com/40497633/199299775-d83acc72-80f4-46a4-86fa-377ebaf57df2.png)
+
