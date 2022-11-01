@@ -1,5 +1,5 @@
 # M4ldu1n-Oh
-Collection of malduino scripts for pentesters.
+Collection of malduino scripts for pentesters and red teaming.
 
 ## Usage:
 
