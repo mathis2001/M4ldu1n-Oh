@@ -29,6 +29,10 @@ Collection of malduino scripts for pentesters and red teaming.
 
 - wifi-pwd-grabber.txt: Search for cleartext wifi passwords stored in the computer and paste results in a file named "wifipwd.txt".
 
+- screenshot.txt: Take screenshot of the entire screen every 5min for 1h.
+
+- KillDefender.txt: Try to disable Windows Defender on the targeted computer.
+
 ### Disclaimer: This tool have been designed for cybersecurity curious, pentesters and red team operators for your own computers or on computers you are allowed to test. Please, do not use it for illegal purposes.
 
 ## Screenshots
