@@ -31,7 +31,9 @@ Collection of malduino scripts for pentesters and red teaming.
 
 - screenshot.txt: Take screenshot of the entire screen every 5min for 1h.
 
-- KillDefender.txt: Try to disable Windows Defender on the targeted computer.
+- KillDefender.txt: Try to disable Windows Defender on the targeted computer. ( /!\ Need Admin rights)
+Command to enable back if complete disable work => "Set-ItemProperty 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender' DisableAntiSpyware 0"
+and then "Restart-Computer"
 
 ### Disclaimer: This tool have been designed for cybersecurity curious, pentesters and red team operators for your own computers or on computers you are allowed to test. Please, do not use it for illegal purposes.
 
