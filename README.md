@@ -35,6 +35,8 @@ Collection of malduino scripts for pentesters and red teaming.
 Command to enable back if complete disable work => "Set-ItemProperty 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender' DisableAntiSpyware 0"
 and then "Restart-Computer"
 
+- BrowserDataGrabber.txt: Grab juicy files from Chrome, Edge and Firefox browsers and put them in a file named BrowserInfo.
+
 ### Disclaimer: This tool have been designed for cybersecurity curious, pentesters and red team operators for your own computers or on computers you are allowed to test. Please, do not use it for illegal purposes.
 
 ## Screenshots
