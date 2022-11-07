@@ -37,6 +37,8 @@ and then "Restart-Computer"
 
 - BrowserDataGrabber.txt: Grab juicy files from Chrome, Edge and Firefox browsers and put them in a file named BrowserInfo.
 
+- NetworkScan.txt: Make a local network ip and port scan. (Change the ip in .txt file to target an other ip range)
+
 ### Disclaimer: This tool have been designed for cybersecurity curious, pentesters and red team operators for your own computers or on computers you are allowed to test. Please, do not use it for illegal purposes.
 
 ## Screenshots
