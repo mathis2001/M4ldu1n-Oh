@@ -39,6 +39,8 @@ and then "Restart-Computer"
 
 - NetworkScan.txt: Make a local network ip and port scan. (Change the ip in .txt file to target an other ip range)
 
+- VoiceAssistant.txt: Simply activate Voice Assistant. x)
+
 ### Disclaimer: This tool have been designed for cybersecurity curious, pentesters and red team operators for your own computers or on computers you are allowed to test. Please, do not use it for illegal purposes.
 
 ## Screenshots
