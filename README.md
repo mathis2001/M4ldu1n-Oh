@@ -23,7 +23,7 @@ Collection of malduino scripts for pentesters and red teaming.
 
 ## Scripts:
 
-- simple-poc-script.txt: Simple write "Malduino Ready !" in a notepad window.
+- simple-poc-script.txt: Simply write "Malduino Ready !" in a notepad window.
 
 - auto-recon.txt: Execute multiple recon commands on the computer and paste results in a file named "recon.txt".
 
