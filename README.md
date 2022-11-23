@@ -41,6 +41,8 @@ and then "Restart-Computer"
 
 - GetGPPpwd.txt: Search for encrypted passwords in Group Policies Preferences xml files and put results in a file named GPPpwd.txt.
 
+- ADEnum.txt: Enumerate Active Directory environment and put results in a file named adoutput.txt. (Not finished => "Beta")
+
 - VoiceAssistant.txt: Simply activate Voice Assistant. x)
 
 ### Disclaimer: This tool have been designed for cybersecurity curious, pentesters and red team operators for your own computers or on computers you are allowed to test. Please, do not use it for illegal purposes.
